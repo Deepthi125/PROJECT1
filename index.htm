@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Standard Application for Employment</title>
+<script>
+    function myDisplay() {
+    var fname, lname, mname, fullname;
+    fname = document.getElementById("f1").value;
+    mname = document.getElementById("m1").value;
+    lname = document.getElementById("l1").value;
+    fullname = fname + lname;
+    document.getElementByID("P1").innerHTML = fullname;
+    }
+</script>
+</head>
+<body>
+<h2 style="text-align:center">Application for Employment</h2>
+<h5 style="text-align:center">(Please carefully read and answer all questions. You will not be considered for employment 
+    if you fail to completely answer all the questions in this application)</h5>
+<hr> <br>
+<table border="2">
+    <tr><td><b>Employer:</b></td><td>ABC Private Limitted<td><b>Position Applying for:</b></td><td><input/></td></tr>
+</table><br>
+<table border="2">
+    <tr><td><b>Personal Information</b></td></tr>
+    <tr><td>First Name:<td><input id="f1"/></td><td>Middle Name:</td><td><input id = "m1"/></td>
+        <td>Last name:</td><td><input id="l1"/></td><td>Gender:</td><td><input type = "radio"/ >M &nbsp;<input type = "radio"/> F</td>
+    <tr><td>Street Address:</td><td><input/></td><td>City:</td><td><input/><td>State:</td>
+        <td><input/></td><td>Age:</td><td><input/></td></tr>
+    <tr><td>Home Telephone Number</td><td><input/></td><td>Mobile Number:</td><td><input/></td>
+         <td>Alternate Mobile Number:</td><td><input/></td><td>Zip:</td><td><input/></td></tr>
+    <tr></tr>
+</table><br>
+<table border="2">
+    <tr><td><b>Position Information</b></td></tr>
+    <tr><td>Hours:<input type = "checkbox"/ > Full time &nbsp
+                  <input type = "checkbox"/ > Part Time</checkbox></td>
+        <td><input type = "checkbox"/ >Days &nbsp <input type = "checkbox"/ > Evenings &nbsp</td>
+        <td><input type = "checkbox"/ >Temporary &nbsp <input type = "checkbox"/ > Permanant</td>
+    <tr></tr>
+</table><br>
+<table border="2">
+    <tr><td><b>Qualification</b></td></tr>
+    <tr><td><td>School name/Address </td><td>From (Mo - Year)</td><td>To(Mo - Year)</td>
+        <td>Percentage</td><td>Area of Specilization</td>
+    </tr>
+    <tr><td>SSLC</td><td><input/></td><td><input/</td><td><input/><td><input/</td>
+        <td><input/></td></tr>
+    <tr><td>Plus Two</td><td><input/></td><td><input/</td><td><input/></td>
+         <td><input/</td><td><input/</td></tr>
+    <tr><td>College</td><td><input/></td><td><input/</td><td><input/></td>
+         <td><input/</td><td><input/</td></tr>
+</table><br>
+<table border="2">
+    <tr><td><b>Special Skills</b></td></tr>
+    <tr><td><input/><td></tr>
+</table><br>
+<table border="2">
+    <tr><td><b>REFERENCES</b></td></tr>
+    <tr><td>Name</td><td>Address/Street/City</td><td>Phone</td><td>Relationship</td></tr>
+    <tr><td><input/></td><td><input/></td><td><input/></td><td><input/></td></tr>
+    <tr><td><input/></td><td><input/></td><td><input/></td><td><input/></td></tr>
+    <tr><td><input/></td><td><input/></td><td><input/></td><td><input/></td></tr>
+</table><br>
+<br><button>PREVIEW</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" onClick="myDisplay()">SUBMIT</button><br>
+<p id="P1"></p>
+</body>
+</html>
